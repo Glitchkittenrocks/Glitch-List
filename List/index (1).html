@@ -61,12 +61,12 @@ h1{margin-bottom:25px}
 <script>
 
 const entries=[
-{rank:1,title:"Tung Tung Tung Sahur",creator:"TheGuyIsSus",verifier:"TheGuyIsSus",points:350,image:"images/Tung.png",showcase:"https://www.youtube.com/watch?v=AZFy_lboRPs"},
-{rank:2,title:"Silly Shenanigans",creator:"SmashKing",verifier:"ThunderSeptical",points:340,image:"images/Shenanigans.png",showcase:"https://www.youtube.com/watch?v=-wANJnhkU18"},
-{rank:3,title:"Burbank House",creator:"IvanIsSus",verifier:"IvanIsSus",points:330,image:"images/Burbank.png",showcase:"https://www.youtube.com/watch?v=J8cun0_lYrg"},
-{rank:4,title:"Laced Up",creator:"IvanIsSus",verifier:"IvanIsSus",points:320,image:"images/lacedup.png",showcase:"https://www.youtube.com/watch?v=A0JJb9TYv6I"},
-{rank:5,title:"Zelda ahh Wave",creator:"IvanIsSus",verifier:"IvanIsSus",points:310,image:"images/Zeldawave.png",showcase:"https://www.youtube.com/watch?v=JX0phHmMqKg"},
-{rank:6,title:"Silly Shenanigans Easy",creator:"SmashKing",verifier:"SmashKing",points:300,image:"images/Shenan.png",showcase:"https://www.youtube.com/watch?v=EurpT38gCoA"}
+{id:undefined,rank:1,title:"Tung Tung Tung Sahur",creator:"TheGuyIsSus",verifier:"TheGuyIsSus",points:350,image:"images/Tung.png",showcase:"https://www.youtube.com/watch?v=AZFy_lboRPs"},
+{id:144654136,rank:2,title:"Silly Shenanigans",creator:"SmashKing",verifier:"ThunderSeptical",points:340,image:"images/Shenanigans.png",showcase:"https://www.youtube.com/watch?v=-wANJnhkU18"},
+{id:144736644,rank:3,title:"Burbank House",creator:"IvanIsSus",verifier:"IvanIsSus",points:330,image:"images/Burbank.png",showcase:"https://www.youtube.com/watch?v=J8cun0_lYrg"},
+{id:123169755,rank:4,title:"Laced Up",creator:"IvanIsSus",verifier:"IvanIsSus",points:320,image:"images/lacedup.png",showcase:"https://www.youtube.com/watch?v=A0JJb9TYv6I"},
+{id:111403627,rank:5,title:"Zelda ahh Wave",creator:"IvanIsSus",verifier:"IvanIsSus",points:310,image:"images/Zeldawave.png",showcase:"https://www.youtube.com/watch?v=JX0phHmMqKg"},
+{id:144754280,rank:6,title:"Silly Shenanigans Easy",creator:"SmashKing",verifier:"SmashKing",points:300,image:"images/Shenan.png",showcase:"https://www.youtube.com/watch?v=EurpT38gCoA"}
 ];
 
 const players=[
@@ -97,6 +97,7 @@ function render(search=""){
                 <div class="creator">published by <b>${e.creator}</b></div>
                 <div class="stats">verified by <b>${e.verifier}</b></div>
                 <div class="stats">points: <b>${e.points}</b></div>
+		<div class="stats">ID: <b>${e.id}</b></div>
             </div>
         </div>`;
     });
