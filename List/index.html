@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -134,7 +135,7 @@ h1{
 
 
 .player-points{
-    color:#666;
+    color:#B32020;
     margin-top:5px;
 }
 
@@ -319,6 +320,72 @@ style="width:100%;border-radius:8px;margin-bottom:15px;">
 <p>
 <b>Level ID:</b>
 <span id="levelID"></span>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<input type="text" value="Hello World" id="myInput">
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy text
+  </button>
+</div>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
 </p>
 
 
@@ -373,7 +440,7 @@ rank:2,
 title:"Tung Tung Tung Sahur",
 creator:"TheGuyIsSus",
 verifier:"TheGuyIsSus",
-points:340,
+points:330,
 image:"images/Tung.png",
 showcase:"https://www.youtube.com/watch?v=AZFy_lboRPs",
 victors:[
@@ -388,10 +455,10 @@ rank:3,
 title:"Wave Chalg",
 creator:"TheGuyIsSus",
 verifier:"TheGuyIsSus",
-points:330,
+points:340,
 image:"images/Invis.png",
 showcase:"https://www.youtube.com/watch?v=qR8WpHUDdQg",
-victors:["ThunderSeptical"]
+victors:["Thunder Septical"]
 },
 
 
@@ -530,7 +597,8 @@ victors:[
 "TheGuyIsSus",
 "pirateofva",
 "ThunderSeptical",
-"Fun Guy"
+"Fun Guy",
+"Glitch"
 ]
 }
 ];
@@ -586,7 +654,8 @@ beaten:[
 {
 name:"Glitch",
 beaten:[
-"Laced Up"
+"Laced Up",
+"Silly Shenanigans Easy"
 ]
 },
 
